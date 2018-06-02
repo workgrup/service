@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>CONVERTIDOR DE DIVISAS</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <body>
+        <div id="combo">
+		<h2>Conversor de Divisas</h2>
+		<table>
+			<tr>
+				<td><input id="decantidad" type="text" size="15" value="1" onkeyup="cambiarDivisa();" ></td>
+				<td>
+					<select id="de" onchange="cambiarDivisa();">
+						<option value="COP" selected>Pesos Colombianos (COP)</option>
+						<option value="USD">Dólar Americano (USD)</option>
+						<option value="JPY">Japanese Yen (JPY)</option>
+						<option value="BRL">Brazilian Real (BRL)</option>
+				    </select>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input id="acantidad" type="text" size="15" disabled="" ></td>
+				<td>
+					<select id="a"onchange="cambiarDivisa();">
+						<option value="COP">Pesos Colombianos (COP)</option>
+						<option value="USD" selected>Dólar Americano (USD)</option>
+						<option value="JPY">Japanese Yen (JPY)</option>
+						<option value="BRL">Brazilian Real (BRL)</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+
+    </body>
+</html>
